@@ -3,16 +3,11 @@
 using namespace std;
 
 
-int hieu(int a, int b){//ky
-	return a-b;
-}
-
-
-
-// Tran Van Si
-
-int tong(int a, int b){
+int tinhTong(int a, int b){
 	return a+b;
+}
+int tinhHieu(int a, int b){
+	return a-b;
 }
 
 float thuong(int a, int b)
@@ -29,14 +24,9 @@ int tich(int a, int b){
 
 int main()
 {
-	cout << "DAY LA CHUONG TRINH DE THUC HANH GIT";
-	// Tong
-	cout<<tong(2,3);
-	// thuong
-	cout<<thuong(2,4);
-	//tich
-	cout<< tich(3,4);
-
+	cout << "Day phep toan:" << endl;
+	cout << "Tong: "<< tinhTong(2,3);
+	cout << "\nHieu: " << tinhHieu(5,4);
 	
 	system("pause");
 	
